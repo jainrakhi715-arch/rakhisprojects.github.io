@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rakhi Jain – mechanics for lungs & spines</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Rakhi Jain</h1>
+  <p>Low-tech fixes for high-impact problems. Future env-engineer, current enabler of lungs & spines.</p>
+  <nav>
+    <a href="mailto:rakhi.jain@mail.com">Email</a>
+    <a href="https://linkedin.com/in/rakhijain" target="_blank">LinkedIn</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Projects</h2>
+
+  <article class="card" onclick="toggle('p1')">
+    <h3>Smart Work Table</h3>
+    <p class="tagline">A desk that buzzes when painters bend 47 ° (ISO says keep it under 25 °).</p>
+    <div id="p1" class="detail">
+      <p><strong>TL;DR</strong> Collar sensor → STM32 → linear actuators. 41 % less muscle strain, 2× pain-free work time.</p>
+      <ul>
+        <li>Artisan baseline: 4.2 cm forward head drift, 42 ° thoracic curve, pain kicks in at 47 min.</li>
+        <li>MPU6050 badge streams posture @ 50 Hz; desk adjusts in 127 ms—faster than you can blink.</li>
+        <li>127 ms reaction time, ±0.1 ° drift after EMI fix (ferrite beads > magic).</li>
+        <li>RULA score dropped from 6.3 (“high risk”) to 3.8 (“acceptable”). Old guy approved: “table bends for me now.”</li>
+      </ul>
+      <p class="footnote">Fail tally: 4 prototypes, 1 resonance fever, 3.7 mm backlash humiliation.</p>
+      <span class="label">Mechanical</span><span class="label">Embedded</span><span class="label">Ergonomics</span>
+    </div>
+  </article>
+
+  <article class="card" onclick="toggle('p2')">
+    <h3>Solar Dust Killer</h3>
+    <p class="tagline">Stone carving minus the silica smoothie.</p>
+    <div id="p2" class="detail">
+      <p><strong>TL;DR</strong> 50 W panel + 30 W pump = 90 % respirable dust gone. Payback 3 months.</p>
+      <ul>
+        <li>6 Ah Li-ion pack runs 72 h continuous; pump doubles as village phone charger when grid dies.</li>
+        <li>Thumb-valve at grinder = on-demand mist, no puddles, no shock risk (12 V only).</li>
+        <li>Artisans finally ditched their 2020 Covid masks. Lungs approve.</li>
+      </ul>
+      <div class="side-vids">
+        <div><small>Before</small>
+          <video autoplay muted loop playsinline poster="https://drive.google.com/thumbnail?id=1BEFORE-ID&sz=w400">
+            <source src="https://drive.google.com/uc?export=download&id=1BEFORE-ID" type="video/mp4">
+          </video>
+        </div>
+        <div><small>After</small>
+          <video autoplay muted loop playsinline poster="https://drive.google.com/thumbnail?id=1AFTER-ID&sz=w400">
+            <source src="https://drive.google.com/uc?export=download&id=1AFTER-ID" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <p class="footnote">BOM 65 $. Wet-vac cart quote: 800 $. Math done.</p>
+      <span class="label">Clean-tech</span><span class="label">Low-cost</span>
+    </div>
+  </article>
+</main>
+
+<footer>© 2024 Rakhi Jain – built with three files and zero frameworks</footer>
+<script src="script.js"></script>
+</body>
+</html>
